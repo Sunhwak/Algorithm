@@ -1,14 +1,6 @@
-st = input()
+word = list(input())
 
-flag = False
-for i in range(len(st)) :
-    if st[i] == st[len(st)-i-1] :
-        flag = True
-    else :
-        flag = False
-        break
-
-if flag :
+if list(reversed(word)) == word :
     print(1)
 else :
     print(0)
